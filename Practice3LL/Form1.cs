@@ -8,7 +8,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WCFforServer;
+using WCFserver;
 namespace Practice3LL
 {
     public partial class Form1 : Form

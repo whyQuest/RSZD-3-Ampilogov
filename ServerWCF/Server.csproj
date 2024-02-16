@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WCFforServer\WCFforServer.csproj">
+    <ProjectReference Include="..\WCFforServer\WCFserver.csproj">
       <Project>{659066a7-742d-4f70-86a6-2b40775b24b3}</Project>
-      <Name>WCFforServer</Name>
+      <Name>WCFserver</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

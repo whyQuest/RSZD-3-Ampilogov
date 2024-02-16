@@ -88,13 +88,13 @@
     <None Include="Resources\Screenshot_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ServerWCF\ServerWCF.csproj">
+    <ProjectReference Include="..\ServerWCF\Server.csproj">
       <Project>{8f144d5e-84b1-44e8-b704-31a3687f089c}</Project>
-      <Name>ServerWCF</Name>
+      <Name>Server</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WCFforServer\WCFforServer.csproj">
+    <ProjectReference Include="..\WCFforServer\WCFserver.csproj">
       <Project>{659066a7-742d-4f70-86a6-2b40775b24b3}</Project>
-      <Name>WCFforServer</Name>
+      <Name>WCFserver</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

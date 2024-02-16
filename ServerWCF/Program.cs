@@ -4,8 +4,9 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using WCFforServer;
-namespace ServerWCF
+using WCFserver;
+
+namespace Server
 {
     public class Program
     {
