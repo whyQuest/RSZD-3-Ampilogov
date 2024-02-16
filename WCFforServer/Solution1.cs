@@ -11,8 +11,8 @@ namespace WCFforServer
     public interface ITransferObject
     {
         [OperationContract]
-        double Calculate(double x, double y, double c);
+        double Calculate(double a, double b, double x, double y);
         [OperationContract]
-        double Factorial(int n);
+        double factorial(int n);
     }
 }

@@ -30,11 +30,12 @@ namespace Practice3LL
             ChannelFactory<ITransferObject> factory = new ChannelFactory<ITransferObject>(clientBinding, address);
             var service = factory.CreateChannel();
 
-            double x = Convert.ToDouble(textBox1.Text);
-            double y = Convert.ToDouble(textBox2.Text);
-            double c = Convert.ToDouble(textBox3.Text);
+            double a = Convert.ToDouble(textBox1.Text);
+            double b = Convert.ToDouble(textBox2.Text);
+            double x = Convert.ToDouble(textBox3.Text);
+            double y = Convert.ToDouble(textBox4.Text);
 
-            var sum = service.Calculate(x, y, c * Math.PI);
+            var sum = service.Calculate(a, b, x, y);
             label4.Text = sum.ToString();
         }
     }

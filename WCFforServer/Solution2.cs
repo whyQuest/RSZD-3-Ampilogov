@@ -9,24 +9,26 @@ namespace WCFforServer
 {
     public class TransferObject : ITransferObject
     {
-        public double Calculate(double x, double y, double c)
+        public double Calculate(double a, double b, double x, double y)
         {
             double sum = 0;
-            for (int i = 0; i < 30; i++)
+            for (int i = 1; i <= 10; i++)
             {
-                sum += (Math.Pow(-1, i + 1) * (Math.Sin(x) * Math.Cos(x) + Math.Tan(c) / Factorial(i + 3)));
+                double term1 = Math.Pow(Math.Log(x), y);
+                double term2 = Math.Pow(Math.Sin(a), b);
+                sum += (term1 + term2) / (i * factorial(i));
             }
             return sum;
         }
-        public double Factorial(int i)
+        public double factorial(int n)
         {
-            if (i == 0)
+            if (n == 0)
             {
                 return 1;
             }
-            else if (i > 0)
+            else if (n > 0)
             {
-                return i * Factorial(i - 1);
+                return n * factorial(n - 1);
             }
             else
             {
